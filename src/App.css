@@ -30,7 +30,6 @@
   font-size: 60px;
   border: solid 5px;
   
-  
 }
 .retryButton{
   color: blue;
@@ -347,6 +346,45 @@ strong {
   align-self: flex-end;
   margin-right: 40px;
   margin-top: 50px;
+}
+
+
+
+@media screen and (max-width:426px) {
+  .tableColumn{
+    width: 10vh;
+  }
+  .Name{
+    font-size: 30px; 
+    font-family: Bree serif;
+  }
+  .img{
+    height: 40px;
+    
+    
+  }
+  .header{
+    flex-direction: column;
+  }
+  .score{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  .scoreAlign{
+    align-self: flex-end;
+  }
+  .button2{
+    width: 60px;
+    font-size: 10px;
+  }
+  .winText{
+    font-size: 20px;
+  }
+  .btn{
+    width: 120px;
+    font-size: 10px;
+  }
 }
 
 

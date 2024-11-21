@@ -1,4 +1,3 @@
-
 import './App.css';
 import { Component } from 'react';
 class App extends Component {
@@ -139,7 +138,7 @@ class App extends Component {
   render(){
     const{First,Second,Third,Fifth,Fourth,Sixth,Seventh,Eight,Nineth,win,X,O,defaultValue}=this.state
     const checkWin=win===""?false:true
-      
+    const colour=defaultValue==="X"?"colour1":"colour2"   
     return (
       <>
       <header className='header'> 
@@ -147,12 +146,9 @@ class App extends Component {
           <img  className="img" src={'https://cdn1.vectorstock.com/i/1000x1000/47/65/glowing-neon-line-tic-tac-toe-game-icon-isolated-vector-39414765.jpg'} alt="Logo"/>
           <h1 className='Name'>Tic Tac Toe</h1>
         </div>
-        <div className='flex'>
-          <div>
-            <p className='score'>X - Score: {X}</p>
-            <p className='score'>O - Score: {O}</p>
-          </div>
-          
+        <div className='scoreAlign'>
+          <p className='score'>X - Score: {X}</p>
+          <p className='score'>O - Score: {O}</p>
         </div>
       </header>
       <div className="App">
@@ -187,7 +183,7 @@ class App extends Component {
                   </div>
             </button>
           }
-          <button class="button2 button" onClick={this.restart}>Restart</button>
+          <button className="button2 button" onClick={this.restart}>Restart</button>
       </div>
       </>  
     );
